@@ -67,6 +67,18 @@ router.get( '/me',protect , asyncHandler(async (req, res) => {
   res.status(200).json(req.admin);
 }));
 
+router.get("/admins", async (req,res)=>{
+
+  try{
+    const admin = await Admin.find().lean().exec();
+  return res.status(201).send(admin)
+  }catch(err){
+      res.status(500).json({message:err.message,status:"Failed"})
+  }
+  
+});
+
+
 const generateToken = (id) => {
   return jwt.sign({ id }, `${process.env.JWT_SECRET}`, {
     expiresIn: "30d",
