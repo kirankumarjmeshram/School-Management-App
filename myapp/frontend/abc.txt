@@ -1,0 +1,5 @@
+      Dashboard LN:35 :
+      <section className='heading'>
+        <h3>Admin Name : {user.name}</h3>
+        <span>Email : {user.email}</span>
+      </section>
