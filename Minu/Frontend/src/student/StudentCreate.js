@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const EmpCreate = () => {
+const StudentCreate = () => {
 
     const[id,idchange]=useState("");
     const[name,namechange]=useState("");
@@ -101,4 +101,4 @@ const EmpCreate = () => {
     );
 }
 
-export default EmpCreate;
+export default StudentCreate;

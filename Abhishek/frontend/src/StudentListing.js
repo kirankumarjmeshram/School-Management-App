@@ -84,4 +84,4 @@ const EmpListing = () => {
     );
 }
 
-export default EmpListing;
+export default StudentListing;

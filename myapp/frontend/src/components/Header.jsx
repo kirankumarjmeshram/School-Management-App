@@ -32,14 +32,28 @@ function Header() {
                 Login
               </Link>
             </li>
+            <br />
             <li>
               <Link to='/register'>
                  Register
               </Link>
             </li>
+            <br />
+            <li>
+              <Link to='/getAllStudents'>
+                 Student
+              </Link>
+            </li>
+            <br />
             <li>
               <Link to='/getAllAdmins'>
                  All Admins
+              </Link>
+            </li>
+            <br />
+            <li>
+              <Link to='/getAllTeachers'>
+                 Teacher
               </Link>
             </li>
           </>
