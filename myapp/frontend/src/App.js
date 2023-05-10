@@ -5,6 +5,12 @@ import Header from './components/Header'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import StudentListing from './components/Student/StudentListing'
+import StudentCreate from './components/Student/StudentCreate'
+import StudentEdit from './components/Student/StudentEdit'
+import TeacherListing from './components/Teacher/TeacherListing'
+import TeacherCreate from './components/Teacher/TeacherCreate'
+import TeacherEdit from './components/Teacher/TeacherEdit'
 //import Navbar from './components/Navbar'
 // import AllAdmins from './components/AllAdmins'
 
@@ -13,14 +19,20 @@ function App() {
     <>
       <Router>
         <div className='container'>
-          <h1>World Hello</h1>
           <Header />
           {/* <Navbar/> */}
-          <h1>Hello World</h1>
           <Routes>
             <Route path='/' element={<Dashboard />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/getAllStudents' element={<StudentListing />} />
+            <Route path='/getAllStudents/student/create' element={<StudentCreate />} />
+            <Route path='/student/update/:empid' element={<StudentEdit />} />
+            <Route path='/getAllTeachers' element={<TeacherListing />} />
+            <Route path='/getAllTeachers/teacher/create' element={<TeacherCreate />} />
+            <Route path='/teacher/update/:empid' element={<TeacherEdit />} />
+            {/* ///users/update/ */}
+            {/*employee/create  */}
             {/* <Route path='/getAllAdmins' element={<AllAdmins />} /> */}
           </Routes>
         </div>
