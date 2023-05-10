@@ -21,10 +21,20 @@ function Header() {
       <ul>
         {user ? (
           <li>
+            <button>
+               Student
+            </button>
+            <button>
+               Admin
+            </button>
+            <button>
+               Teacher
+            </button>
             <button onClick={onLogout}>
                Logout
             </button>
           </li>
+          
         ) : (
           <>
             <li>
